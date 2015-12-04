@@ -35,13 +35,13 @@
             <a class="navbar-brand" rel="home" title="AngularJS Authentication App">AngularJS Authentication App</a>
           </div>
           <div class="navbar-header col-md-6">
-            <div data-ng-view="" id="ng-view" class="slide-animation"></div>
+            <div ng-include="'partials/login.html'"></div>
           </div>
         </div>
       </div>
     </div>
     <div class="container" style="margin-top:20px;">
-      
+      <div data-ng-view="" id="ng-view" class="slide-animation"></div>
     </div>
   </body>
   <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
