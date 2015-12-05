@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <div class="container" style="margin-top:20px;">
+    <div class="container" style="margin-top:135px;">
       <div data-ng-view="" id="ng-view" class="slide-animation"></div>
     </div>
   </body>
