@@ -13,13 +13,13 @@
                             <div class="form-group">
                                 <div class="col-sm-6">
                                     <span class="block input-icon input-icon-right">
-                                        <input type="text" class="form-control" placeholder="First name" name="fname" ng-model="signup.fname" focus/>
+                                        <input type="text" class="form-control" placeholder="First name" name="fname" ng-model="signUpObj.fname" focus/>
                                         <span ng-show="signupForm.fname.$error.fname" class="help-inline">First name is mandatory</span> 
                                     </span>
                                 </div>
                                 <div class="col-sm-6">
                                     <span class="block input-icon input-icon-right">
-                                        <input type="text" class="form-control" placeholder="Last name" name="lname" ng-model="signup.lname" focus/>
+                                        <input type="text" class="form-control" placeholder="Last name" name="lname" ng-model="signUpObj.lname" focus/>
                                         <span ng-show="signupForm.lname.$error.lname" class="help-inline">Last name is mandatory</span> 
                                     </span>
                                 </div>
@@ -27,7 +27,7 @@
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <span class="block input-icon input-icon-right">
-                                        <input type="text" class="form-control" placeholder="Mobile number" name="mobile" ng-model="signup.mobile" focus/>
+                                        <input type="text" class="form-control" placeholder="Mobile number" name="mobile" ng-model="signUpObj.mobile" focus/>
                                         <span ng-show="signupForm.mobile.$error.mobile" class="help-inline">Mobile number is mandatory</span> 
                                     </span>
                                 </div>
@@ -35,7 +35,7 @@
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <span class="block input-icon input-icon-right">
-                                        <input type="text" class="form-control" placeholder="Email id" name="email" ng-model="signup.email" focus/>
+                                        <input type="text" class="form-control" placeholder="Email id" name="email" ng-model="signUpObj.email" focus/>
                                         <span ng-show="signupForm.email.$error.email" class="help-inline">Email id number is mandatory</span> 
                                     </span>
                                 </div>
@@ -43,7 +43,7 @@
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <span class="block input-icon input-icon-right">
-                                    <input type="password" class="form-control" name = "password" placeholder="Password" ng-model="signup.password" required/>
+                                    <input type="password" class="form-control" name = "password" placeholder="Password" ng-model="signUpObj.password" required/>
                                     <small class="errorMessage" data-ng-show="signupForm.password.$dirty && signupForm.password.$invalid"> Enter Password.</small>
                             </span>
                                 </div>
@@ -51,7 +51,7 @@
                             <div class="form-group">
                                 <div class="col-sm-12">
                                     <span class="block input-icon input-icon-right">
-                                <input type="password" class="form-control" name="password2" placeholder="Password Again" ng-model="signup.password2" password-match="signup.password" required/>                                
+                                <input type="password" class="form-control" name="password2" placeholder="Password Again" ng-model="signUpObj.password2" password-match="signup.password" required/>                                
                                 <small class="errorMessage" data-ng-show="signupForm.password2.$dirty && signupForm.password2.$error.required"> Enter password again.</small>
 
                                <small class="errorMessage" data-ng-show="signupForm.password2.$dirty && signupForm.password2.$error.passwordNoMatch && !signupForm.password2.$error.required"> Password do not match.</small>
@@ -62,7 +62,8 @@
                             <div class="form-group">
                                 <span class="lbl col-sm-5"> </span>
                                 <div class="col-sm-7">
-                                    <button type="submit" class="width-35 pull-right btn btn-sm btn-primary" ng-click="signUp(signup)" data-ng-disabled="signupForm.$invalid">
+                               abc: {{signUpObj.abc}}
+                                    <button type="submit" ng-model="signUpObj.signUpBtn" class="width-35 pull-right btn btn-sm btn-primary" ng-click="signUpObj.signUpSubmit()" data-ng-disabled="signupForm.$invalid">
                                         Sign Up
                                     </button>
                                 </div>

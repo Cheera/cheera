@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'toaster','tabsApp','signUpModuleApp']);
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'toaster','tabsApp']);
 
 app.config(['$routeProvider',
   function ($routeProvider) {
@@ -16,8 +16,7 @@ app.config(['$routeProvider',
             .when('/signup', {
                 title: 'Signup',
                 templateUrl: 'partials/signup.html',
-                
-                controller : 'signUpController'
+                controller: 'authCtrl'
             })
             .when('/dashboard', {
                 title: 'Dashboard',

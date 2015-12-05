@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>AngularJS Authentication App</title>
     <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/toaster.css" rel="stylesheet">
     <style>
@@ -46,13 +46,16 @@
   </body>
   <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
   <!-- Libs -->
-  <script src="js/angular.min.js"></script>
-  <script src="js/angular-route.min.js"></script>
-  <script src="js/angular-animate.min.js" ></script>
+  <script src="assets/js/angular.min.js"></script>
+  <script src="assets/js/angular-route.min.js"></script>
+  <script src="assets/js/angular-animate.min.js" ></script>
+  <script src="assets/bootstrap/js/ui-bootstrap-tpls-0.12.0.js" ></script>
   <script src="js/toaster.js"></script>
-  <script src="app/app.js"></script>
-  <script src="app/data.js"></script>
-  <script src="app/directives.js"></script>
-  <script src="app/authCtrl.js"></script>
+  <script src="js/controllers/app.js"></script>
+  <script src="js/controllers/data.js"></script>
+  <script src="js/controllers/directives.js"></script>
+  <script src="js/controllers/authCtrl.js"></script>
+  <script src="js/controllers/signUp.js"></script>
+   <script src="js/controllers/tabs.js"></script>
 </html>
 
