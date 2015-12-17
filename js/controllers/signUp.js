@@ -8,5 +8,5 @@ signUpModuleApp.controller('signUpController',['$scope',function ($scope) {
 			location.href = '#/signUpDetails';
 		}
 	}
-	//$scope.signUpObj.onLoad();
+	$scope.signUpObj.onLoad();
 }]);

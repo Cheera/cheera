@@ -1,4 +1,4 @@
-var authCtrlApp =  angular.module('authCtrlApp', ['common-mocks'])
+var authCtrlApp =  angular.module('authCtrlApp', [])
 authCtrlApp.controller('authCtrl', function ($scope, $rootScope, $routeParams, $location, $http, Data) {
     //initially set those objects to null to avoid undefined error
     $scope.login = {};
