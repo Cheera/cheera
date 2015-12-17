@@ -9,6 +9,7 @@
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <link href="css/toaster.css" rel="stylesheet">
+    <link href="css/cheera.css" rel="stylesheet">
     <style>
       a {
         color: orange;
@@ -40,12 +41,20 @@
         </div>
       </div>
     </div>
-    <div class="container" style="margin-top:135px;">
+    <div class="container">
       <div data-ng-view="" id="ng-view" class="slide-animation"></div>
     </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">
+        <div ng-include="'partials/footer/about.html'"></div>
+        </p>
+      </div>
+    </footer>
   </body>
   <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
   <!-- Libs -->
+  <script src="assets/js/angular-mocks.js"></script>
   <script src="assets/js/angular.min.js"></script>
   <script src="assets/js/angular-route.min.js"></script>
   <script src="assets/js/angular-animate.min.js" ></script>
@@ -56,6 +65,7 @@
   <script src="js/controllers/directives.js"></script>
   <script src="js/controllers/authCtrl.js"></script>
   <script src="js/controllers/signUp.js"></script>
-   <script src="js/controllers/tabs.js"></script>
+  <script src="js/controllers/tabs.js"></script>
+  <script src="js/global/mock-services.js"></script>
 </html>
 

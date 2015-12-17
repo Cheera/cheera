@@ -1,9 +1,12 @@
-var signUpModuleApp = angular.module('signUpModuleApp', ['ngRoute']);
+var signUpModuleApp = angular.module('signUpModuleApp', []);
 signUpModuleApp.controller('signUpController',['$scope',function ($scope) {
 	$scope.signUpObj={
-		abc:"sdsdaasd",
+		onLoad : function(){
+			
+		},
 		signUpSubmit : function(){
-			location.href = 'dashboard';
+			location.href = '#/signUpDetails';
 		}
 	}
+	//$scope.signUpObj.onLoad();
 }]);

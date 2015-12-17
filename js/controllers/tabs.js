@@ -41,7 +41,7 @@ $scope.tabs = [{
 		'heading': 'Partner Preferences',
 		'active': false,
 		'disabled':false,
-		'template':'partials/signup/career.html',
+		'template':'partials/signup/personal_preference.html',
 		'id' : 'partner_pref'
 	}];
 }]);

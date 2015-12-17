@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'toaster','tabsApp']);
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'toaster','tabsApp','signUpModuleApp','authCtrlApp']);
 
 app.config(['$routeProvider',
   function ($routeProvider) {
@@ -6,7 +6,7 @@ app.config(['$routeProvider',
         when('/login', {
             title: 'Login',
             templateUrl: 'partials/signup.html',
-            controller: 'authCtrl'
+            controller: 'signUpController'
         })
             .when('/logout', {
                 title: 'Logout',
@@ -16,17 +16,16 @@ app.config(['$routeProvider',
             .when('/signup', {
                 title: 'Signup',
                 templateUrl: 'partials/signup.html',
-                controller: 'authCtrl'
+                controller: 'signUpController'
             })
-            .when('/dashboard', {
-                title: 'Dashboard',
+            .when('/signUpDetails', {
+                title: 'signUpDetails',
                 templateUrl: 'partials/tabs.html'
             })
-            .when('/', {
-                title: 'Login',
-                templateUrl: 'partials/signup.html',
-                controller: 'authCtrl',
-                role: '0'
+            
+            .when('/dashboard', {
+                title: 'Dashboard',
+                templateUrl: 'partials/dashboard.html'
             })
             .otherwise({
                 redirectTo: '/login'
