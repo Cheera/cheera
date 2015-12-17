@@ -54,7 +54,6 @@
   </body>
   <toaster-container toaster-options="{'time-out': 3000}"></toaster-container>
   <!-- Libs -->
-  <script src="assets/js/angular-mocks.js"></script>
   <script src="assets/js/angular.min.js"></script>
   <script src="assets/js/angular-route.min.js"></script>
   <script src="assets/js/angular-animate.min.js" ></script>
@@ -66,6 +65,5 @@
   <script src="js/controllers/authCtrl.js"></script>
   <script src="js/controllers/signUp.js"></script>
   <script src="js/controllers/tabs.js"></script>
-  <script src="js/global/mock-services.js"></script>
 </html>
 

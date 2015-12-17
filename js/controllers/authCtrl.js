@@ -7,8 +7,8 @@ authCtrlApp.controller('authCtrl', function ($scope, $rootScope, $routeParams, $
         alert("hi");
             var headers = { 'Authorization': 123456 };
             $scope.status = 'Saving...';
-
-             $http.post('http://localhost/CheeraAPI/signUp', message, { headers: headers } ).success(function(response) {
+            var message = "";
+             $http.post('http://localhost:8888/Cheera_API/signUp', message, { headers: headers } ).success(function(response) {
                  $scope.status = '';
                  alert("success");
             }).error(function() {
