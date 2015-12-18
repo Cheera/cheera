@@ -6,14 +6,14 @@
                     <label class="col-sm-3 control-label no-padding-right" for="profCreated"> Preferred Age Range </label>
                     <div class="col-sm-3">
                         <span class="block input-icon input-icon-right">
-                            <select><option>-Select---</option></select> to <select><option>-Select---</option></select>
+                            <select class="form-control"><option>-Select---</option></select> to <select class="form-control"><option>-Select---</option></select>
                             <span ng-show="signupForm_pd.profCreated.$error.profCreated" class="help-inline">mandatory</span> 
                         </span>
                     </div>
                     <label class="col-sm-3 control-label no-padding-right" for="height"> Education </label>
                     <div class="col-sm-3">
                         <span class="block input-icon input-icon-right">
-                            <select><option>-Select---</option></select>
+                            <select class="form-control"><option>-Select---</option></select>
                             <span ng-show="signupForm_pd.height.$error.height" class="help-inline">mandatory</span> 
                         </span>
                     </div>
@@ -22,14 +22,14 @@
                     <label class="col-sm-3 control-label no-padding-right" for="physical"> Height </label>
                     <div class="col-sm-3">
                         <span class="block input-icon input-icon-right">
-                            <select><option>-Select---</option></select> to <select><option>-Select---</option></select>
+                            <select class="form-control"><option>-Select---</option></select> to <select class="form-control"><option>-Select---</option></select>
                             <span ng-show="signupForm_pd.physical.$error.physical" class="help-inline">mandatory</span> 
                         </span>
                     </div>
                     <label class="col-sm-3 control-label no-padding-right" for="complexion"> Employed in </label>
                     <div class="col-sm-3">
                         <span class="block input-icon input-icon-right">
-                            <select><option>-Select---</option></select>
+                            <select class="form-control"><option>-Select---</option></select>
                             <span ng-show="signupForm_pd.complexion.$error.complexion" class="help-inline">mandatory</span> 
                         </span>
                     </div>
@@ -38,18 +38,18 @@
                     <label class="col-sm-3 control-label no-padding-right" for="gender"> Stars not preffered </label>
                     <div class="col-sm-3">
                         <span class="block input-icon input-icon-right">
-                            <input type="text">
+                            <input type="text" class="form-control">
                             <span ng-show="signupForm_pd.gender.$error.gender" class="help-inline">mandatory</span> 
                         </span>
                     </div>                    
                 </div>
-                <div class="form-group">
+                <div class="form-group pull-left">
                     <label class="col-sm-12 control-label no-padding-left" for="gender"> Few lines about my partner </label>
                 </div>
                 <div class="form-group">
                     <div class="col-sm-12">
                         <span class="block input-icon input-icon-right">
-                            <textarea></textarea>
+                            <textarea class="form-control"></textarea>
                             <span ng-show="signupForm_pd.gender.$error.gender" class="help-inline">mandatory</span> 
                         </span>
                     </div>

@@ -1,21 +1,19 @@
 <div class="page-content">
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-12">
             <form name="signupForm_pd" class="form-horizontal" role="form">
                 <div class="form-group">
                     <label class="col-sm-3 control-label no-padding-right" for="religion"> Religion </label>
                     <div class="col-sm-3">
                         <span class="block input-icon input-icon-right">
-                            <select><option>-Select---</option></select>
+                            <select class="form-control"><option>-Select---</option></select>
                             <span ng-show="signupForm_pd.religion.$error.religion" class="help-inline">mandatory</span> 
                         </span>
                     </div>
-                </div>
-                <div class="form-group">
                     <label class="col-sm-3 control-label no-padding-right" for="caste"> Caste </label>
                     <div class="col-sm-3">
                         <span class="block input-icon input-icon-right">
-                            <select><option>-Select---</option></select>
+                            <select class="form-control"><option>-Select---</option></select>
                             <span ng-show="signupForm_pd.caste.$error.caste" class="help-inline">mandatory</span> 
                         </span>
                     </div>
@@ -24,7 +22,7 @@
                     <label class="col-sm-3 control-label no-padding-right" for="star"> Star </label>
                     <div class="col-sm-3">
                         <span class="block input-icon input-icon-right">
-                            <select><option>-Select---</option></select>
+                            <select class="form-control"><option>-Select---</option></select>
                             <span ng-show="signupForm_pd.star.$error.star" class="help-inline">mandatory</span> 
                         </span>
                     </div>
@@ -33,7 +31,7 @@
                     <label class="col-sm-3 control-label no-padding-right" for="dosham"> Dosham in horoscope if any </label>
                     <div class="col-sm-3">
                         <span class="block input-icon input-icon-right">
-                            <input type="input"/>
+                            <input type="input" class="form-control"/>
                             <span ng-show="signupForm_pd.dosham.$error.dosham" class="help-inline">mandatory</span> 
                         </span>
                     </div>
